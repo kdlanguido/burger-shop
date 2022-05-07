@@ -100,7 +100,7 @@ function view_order(id) {
         $("#txt_payment_method").val(val.payment_method);
 
         $('#print_payment_method').text(val.payment_method)
-        $('#print_payment').text('₱' + val.payment)
+        // $('#print_payment').text('₱' + val.payment)
         $('#print_delivery_address').text(val.delivery_address)
         $('#print_note_to_rider').text(val.note_to_rider)
 
@@ -127,10 +127,14 @@ function view_order(id) {
       total = parseInt(delivery_fee + subtotal)
       $('#txt_total').text("₱" + total)
       $('#txt_total_print').text("₱" + total)
+      $('#print_payment').text('₱' +total)
+
       $('#txt_subtotal_view').text("₱" + subtotal)
       $('#txt_delivery_fee_view').text("₱" + delivery_fee)
       $("#tbl_view_order tbody").empty().append(output);
       $("#tbl_view_order_print tbody").empty().append(output);
+
+
 
       $("#md_view_order").modal("show");
       $('#btn_update_order').removeClass('d-none')
