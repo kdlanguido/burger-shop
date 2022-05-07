@@ -127,12 +127,15 @@ function view_order(id) {
       total = parseInt(delivery_fee + subtotal)
       $('#txt_total').text("₱" + total)
       $('#txt_total_print').text("₱" + total)
+      $('#txt_payment_amount').val("₱" + numberWithCommas(total))
       $('#print_payment').text('₱' +total)
+      
 
       $('#txt_subtotal_view').text("₱" + subtotal)
       $('#txt_delivery_fee_view').text("₱" + delivery_fee)
       $("#tbl_view_order tbody").empty().append(output);
       $("#tbl_view_order_print tbody").empty().append(output);
+
 
 
 
