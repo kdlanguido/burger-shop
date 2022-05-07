@@ -1,0 +1,150 @@
+:root {
+  --main-color: #712525 !important;
+  --main-nav-color: #8b2518 !important;
+  --main-sidebar-color: #4c0d0d !important;
+  --main-sidebar-item-hover: #303030 !important;
+}
+
+body {
+  background: var(--main-color);
+}
+.burger_machine_nav {
+  height: 60px;
+  background: var(--main-nav-color);
+  color: white;
+  margin:0 !important;padding:0px;
+}
+.burger_machine_nav a:hover {
+  transform: scale(1.1);
+  cursor:pointer;
+}
+
+
+.burger_machine_sidebar {
+  background: #4c0d0d !important;
+  color: white;
+}
+
+.burger_machine_nav_logo {
+  height: 150px;
+  margin: auto;
+  margin-top: 1rem;
+}
+.burger_machine_sidebar > ul > li {
+  background: var(--main-sidebar-color);
+  color: white;
+}
+
+.burger_machine_sidebar > ul > li:hover {
+  background: var(--main-sidebar-item-hover);
+  color: white;
+  cursor: pointer;
+}
+.burger_machine_sidebar_btn {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  background: #ffd600;
+  border-radius: 20px;
+  width: 150px;
+}
+.navbar_btn_logout {
+  font-weight: bold;
+  margin-bottom: 30px;
+  background: #ffd600;
+  border: 1px solid black;
+  padding: 3px;
+  border-radius: 20px;
+  width: 100px;
+}
+
+.table_style_1 {
+  background: #ff6d59;
+  width: 100%;
+  color: white;
+  border-radius: 3px;
+}
+
+.table_style_1 td {
+  background: white;
+  color: black;
+  border: 1px solid #823838;
+  border-radius: 3px !important;
+  font-size: 9pt;
+}
+.table_style_1 th {
+  border: 1px solid #823838;
+
+  border-radius: 3px !important;
+  font-size: 10pt;
+  text-align: center;
+}
+
+.yellow_box {
+  height: 130px;
+  background: #ffc061;
+  border: 1px solid #712525;
+  border-radius: 5px;
+  width: 100% !important;
+}
+
+.yellow_box_total_order{
+
+  height: 130px;
+  background: #ffc061 !important; 
+  border: 1px solid #712525;
+  border-radius: 5px;
+  width: 100% !important;
+
+}
+.white_box {
+  height: 90px;
+  background: white;
+  border: 1px solid #712525;
+  border-radius: 5px;  
+}
+.white_box_full {
+  height: 48vh;
+  background: white;
+  border: 1px solid #712525;
+  border-radius: 5px;
+}
+
+.md_form > label {
+  font-size: 10pt !important;
+}
+.md_form > div > a {
+  font-size: 10pt !important;
+  font-weight: bold;
+  color: red;
+  text-decoration: none;
+  margin-top: 40px;
+}
+.md_form > div > button {
+  border-radius: 20px;
+  border: 1px solid #ffc061;
+  font-size: 10pt;
+  background: #8bc97b;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+}
+
+.user_order_card_btn {
+  font-weight: bold;
+  background: #ffd600;
+  border-radius: 25px;
+  width: 150px;
+  height: 40px;
+  border: none;
+}
+
+.dropdown-item:hover{
+  background: #FF6D59;
+}
+
+.badge{
+  width: 110px!important;
+}

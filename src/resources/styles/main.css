@@ -1,0 +1,36 @@
+@font-face {
+  font-family: mainFont;
+  src: url(..\resources\fontstyle\BreeSerif-Regular.ttf);
+ 
+}
+
+.icon_btn:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #303030;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
