@@ -512,8 +512,38 @@ $("form#form_check_out").submit(function (e) {
         processData: false,
       });
     }
+    else if (payment_method == "cash" ) {
+
+      var formData = new FormData(this);
+
+      $.ajax({
+        url: "src/database/burger_shop/func/user/add_check_out.php",
+        type: "POST",
+        data: formData,
+        success: function (data) {
+          if (data == 1) {
+            $("#msg_title").text("Payment Success");
+            $("#msg_body").empty();
+
+            $("#msg_body").text(
+              "Payment successful, you can track your order in My Order."
+            );
+
+            $("#md_msg_box").modal("show");
+            $("#cartModal").modal("hide");
+            $("#msg_box_close").unbind();
+            $("#msg_box_close").on("click", function () {
+              location.reload();
+            });
+          }
+        },
+        cache: false,
+        contentType: false,
+        processData: false,
+      });
+    }
     else {
-      show_msg("Payment Details","Please complete gcash details!")
+      show_msg("Payment Details", "Please complete gcash details!")
     }
 
   }
